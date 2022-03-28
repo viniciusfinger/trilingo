@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <div id="teste">
+
+        </div>
+        <script>
+            //Definição dos parâmetros padrões, caso não seja passado nenhum.
+            function contarHistoria(personagem = 'Toby', atividade = 'Fugir', dono = 'Finger') {
+                return `Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade} seu dono era o ${dono} e eles viveram felizes para sempre.`; 
+            }
+
+            document.getElementById('teste').innerHTML = contarHistoria();
+        </script>
+
+    </body>
+</html>
