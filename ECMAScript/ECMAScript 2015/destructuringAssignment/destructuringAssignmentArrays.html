@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <script>
+            //Serve para desestruturar um array
+            let frutas = ['Abacaxi', 'Morango', 'Maçã', 'Pera'];
+
+            //Desestrutura o array para 4 objetos diferentes
+            let [a, b, c, d] = frutas;
+            console.log(a,b,c,d);
+
+            // Caso tenha 5 valores e o array seja < 5, o item que não tiver
+            //  será undefined.
+            let [e, f, g, h, i] = frutas;
+            console.log(e, f, g, h, i);
+
+            //É possível definir um valor padrão para quando não houver valor.
+            let [j, k, l, m, n = 'Uva'] = frutas;
+            console.log(j, k, l, m, n);
+
+            let coisas = [['Abacaxi', 'Uva', 'Morango'], ['Pedro', 'Vinícius', 'José']];
+
+            //Desestrutura o array em frutasQueGosto e pessoas
+            let [frutasQueGosto, pessoas] = coisas;
+
+            //Desestrutura o array de duas dimensões em somente uma e de nomes
+            let [, nomes] = coisas;
+
+            //Pega o segundo elemento do segundo array (Vinícius)
+            let [, [,y]] = coisas;
+
+            //Pega o terceiro elemento do segundo array (José)
+            let [, [,,z]] = coisas;
+
+
+        </script>
+    </body>
+</html>
