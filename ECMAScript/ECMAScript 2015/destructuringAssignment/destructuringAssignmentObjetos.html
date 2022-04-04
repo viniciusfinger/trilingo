@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <script>
+            let produto = {
+                descricao: 'Notebook',
+                preco: 2500,
+                detalhes: {
+                    fabricante: 'ABC',
+                    modelo: 'XYZ'
+                }
+            }
+
+            //Quando se trata de destructuring de objetos, usa-se chaves
+            let {descricao, preco} = produto;
+
+            console.log(descricao, preco);
+
+            //Nomear as variáveis de forma personalizada
+            let {descricao:d, preco:p} = produto;
+
+            //criada variáveis d e p
+            console.log(d, p);
+
+            let {descricao:desc, preco:pre, desconto:des = 0} = produto;
+
+            //retorna 0 ao invés de undefined
+            console.log(desc, pre, des);
+
+            //Desestruturar objeto dentro de um objeto
+            let {descricao: dd, detalhes: {fabricante, modelo}} = produto;
+
+            console.log(dd, fabricante, modelo);
+        </script>
+    </body>
+</html>
