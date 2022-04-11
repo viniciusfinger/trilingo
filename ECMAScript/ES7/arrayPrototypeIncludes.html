@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['Banana', 'Maçã', 'Uva'];
+
+        //verificando se existe um determinado elemento antes do ES7
+        //find retorna o valor pesquisado se existente ou undefined
+        //dá trabalho para validar
+        let retorno = arr.find(item => item == 'Maçã');
+        console.log(retorno) // retorna 'Maçã'
+
+        //a partir do ES7, existe o includes que retorna um boolean
+        let retornoIncludes = arr.includes('Maçã');
+
+        console.log(retornoIncludes); //retorna true
+        
+    </script>
+</body>
+</html>
