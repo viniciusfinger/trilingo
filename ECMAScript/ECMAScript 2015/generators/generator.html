@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //generators: funções especiais que podem ser executadas, pausadas e continuadas em diferentes 
+        //estágios da execução 
+
+        //sintaxe: function*
+        function* criaGenerator(){
+            console.log("teste 1");
+            console.log("teste 2");
+            console.log("teste 3");
+
+            return 'teste 4';
+        }
+
+        let meuGenerator = criaGenerator(); //Aqui a variável recebe um iterator
+        meuGenerator.next(); //executa todo o conteúdo do generator (console.log's)
+
+
+    </script>
+</body>
+</html>
