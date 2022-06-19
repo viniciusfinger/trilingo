@@ -3,10 +3,7 @@
     <section>
       <h3>Value: {{value}}</h3>
       <app-child-item [title]="Filho"
-        (plusOne)="incBy(1)"
-        (plusTwo)="incBy(2)"
-        (minusOne)="decBy(1)"
-        (minusTwo)="decBy(2)"
+        (incBy)="incBy($event)"
       >
       </app-child-item>
     </section>
