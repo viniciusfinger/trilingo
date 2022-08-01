@@ -16,13 +16,13 @@
         <p>{{frases[0].fraseIng}}</p>
       </div>
       <div class="mb-3">
-        <textarea class="form-control" rows="3"></textarea>
+        <textarea class="form-control" rows="3" (input)="atualizaResposta($event)"></textarea>
       </div>
     </div>
     <div class="row">
       <div class="col">
         <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-primary">Verificar</button>
+          <button type="button" class="btn btn-primary" (click)="verificarResposta()">Verificar</button>
         </div>
       </div>
     </div>
