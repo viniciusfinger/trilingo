@@ -14,4 +14,9 @@ export class AppComponent {
     this.tipoEncerramento = tipo;
     this.jogoEmAndamento = false;
   }
+
+  public reiniciarJogo() {
+    this.jogoEmAndamento = true;
+    this.tipoEncerramento = undefined;
+  }
 }
